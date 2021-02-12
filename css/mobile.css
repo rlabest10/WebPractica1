@@ -2,4 +2,22 @@
     body{        
         background-color: yellow;
     }
+
+    .main_section{
+        display: inherit;
+    }
+    .Contenedor_Principal{
+        display: inherit;
+    }
+
+    nav .nav-options{
+        display: none;
+        box-shadow: inset;
+        
+    }
+    #small-main-menu-button{
+        display: flex;
+    }
+
+
 }

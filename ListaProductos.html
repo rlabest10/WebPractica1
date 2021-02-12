@@ -3,35 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acerca Web Basico</title>
+    <title>Lista de Productos</title>
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/mobile.css">
 </head>
-<body>    <!-- Aqui inicial el NavBar -->
+<body>
+    <!-- Aqui inicial el NavBar -->
     <nav>
         <div class="inv-image">
             <img src="img/inventario/image12.jpg" alt="" height="60px" border:"1">
         </div>
         <ul class="nav-options">
-            <li> <a href="index.html"> Inicio </a> </li>
+        <li> <a href="index.html"> Inicio </a> </li>
             <li> <a href="ListaProductos.html">Productos </a></li>
             <li> <a href="#">Consultas </a></li>
             <li> <a href="#">Reportes </a></li>
-            <li> <a href="acercawebbasico.html">Acerca... </a></li>
-        </ul>
+            <li> <a href="acercawebbasico.html">Acerca... </a></li></ul>
     </nav>
     <!-- Aqui Termina el NavBar -->
 
-    <div class="Contenedor_Principal">
-        <ul>
-            <li><a href="#"><img src="img/mesa01.png" alt="Mesa2" width="100">Mesa 1</a> </li>
-            <li><a href="#"><img src="img/mesa01.png" alt="Mesa2" width="100">Mesa 1</a> </li>
+    <form id="Busqueda1" action="../../form-result.php" style="border: 10px;">
+        <p>Apellido: <input type="text" name="apellido"></p>     
+    </form>
+    <button type="button" form="Busqueda1">Enviar!</button>
 
-        </ul>
-        
-        <div class="Contenedor_Mesas">            
-            <a href="#"><img src="img/mesa01.png" alt="Mesa2" width="100">Mesa 2</a> 
-        </div>
-    </div>
 </body>
 </html>
