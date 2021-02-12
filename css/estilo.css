@@ -3,6 +3,7 @@ html,body{
     margin:0px;
     font-size: 12px;
     font-family: Helvetica;
+    background-color:darkslategray;
 }
 
 nav{
@@ -33,13 +34,25 @@ nav li a:hover{
 }
 
 .main_section{
-    padding: 1%;
+    padding: 1cm;
     text-align: center;
-    display: flexbox;
+    align-content: stretch;
+    border-style: groove;
 }
 
 .Contenedor_Principal{
+    display: -moz-grid-group;
+}
+
+.menubotones{    
+    width: 100%;    
+}
+.botones{    
+    width: 15px;
     display: flex;
+    padding-left: 15px;
+    padding-bottom: 10px;    
+    
 }
 
 .Contenedor_Mesas{
@@ -50,9 +63,10 @@ nav li a:hover{
 }
 
 h1{
-    background-color: rgb(63, 63, 231);
+    background-color:rgb(34, 124, 124);
     text-align: center;
     margin-top: 0px;
+    list-style: decimal;
 }
 
 h3{
@@ -61,10 +75,24 @@ h3{
     text-align: center;
 }
 
+h6{
+    color: wheat;
+    text-align: center;
+    font-family: 'Times New Roman';
+    font-size: 15px;
+    padding-bottom: 0%;
+}
+
 #small-main-menu-button{
     display: none;
 }
 
+.attribute{
+    contain: style;
+    padding-left: 1cm;
+    padding-right: 1cm;
+    bottom: 10px;
+}
 /*Otros Atributos
 ******************
 details.attribute,details.attribute-obsolete-in-html5{

@@ -10,6 +10,10 @@
         display: inherit;
     }
 
+    .Contenedor_Mesas{
+        display:flexbox;
+    }
+
     nav .nav-options{
         display: none;
         box-shadow: inset;
@@ -19,5 +23,12 @@
         display: flex;
     }
 
+    .button{
+        display: inherit;
+    }
 
+    img{
+        display: inherit;
+        width: 30%;
+    }
 }
