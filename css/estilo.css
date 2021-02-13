@@ -44,6 +44,20 @@ nav li a:hover{
     display: flex;
 }
 
+.boton1{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    width: 150px;
+    
+    cursor: pointer;
+    margin: 5px;
+}
 .menubotones{      
     display: flex;  
     padding: 10px;  
@@ -99,11 +113,12 @@ h6{
     display: none;
 }
 
-.attribute{
+.attribute, .sumary{
     contain: style;
     padding-left: 1cm;
     padding-right: 1cm;
     bottom: 10px;
+    
 }
 /*Otros Atributos
 ******************
