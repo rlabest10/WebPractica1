@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Facturación</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/mobile.css">
     
@@ -18,77 +19,59 @@
             <li> <a href="index.html"> Inicio </a> </li>
             <li> <a href="ListaProductos.html">Productos </a></li>
             <li> <a href="#">Consultas </a></li>
-            <li> <a href="#">Reportes </a></li>
+            <li> <a href="VistaMesas.html">Reportes </a></li>
             <li> <a href="acercawebbasico.html">Acerca... </a></li>
         </ul>
         <div id="small-main-menu-button">Ξ</div>
     </nav>
     <!-- Aqui Termina el NavBar -->
-    <h1>Restaurante BASICO</h2>
-    
-    <div  class="botoncerrar">
-    <button class="boton1" onclick="openWin()">Cerrar</button>
-    
-    <form>
-        <input type="button"
-        onclick="muestraMensaje()"
-        value="Activar Función">
-    </form>
 
+    <h1>Restaurante BASICO</h1>
 
+    <div  class="menubotones">
+        <button class="boton1" onclick="openWin()">Agregar</button>
+        <button class="boton1" onclick="openWin()">Revisar</button>
+        <button class="boton1" onclick="openWin()">Cancelar</button>
+        <button class="boton1" onclick="openWin()">Reservacion</button>
+        <button class="boton1" onclick="closeWin(this)">Cerrar</button>
     </div>
-    <details class="attribute" text="Acciones">
-        <sumary class="sumary">
-            <div class="menubotones">
-                <div class="botones">                    
-                    <a href="" class="botonesPers1">Agregar Reservación</a>
-                    <a href="" class="botonesPers1">Revisar Reservación</a>
-                    <a href="" class="botonesPers1">Cancelar Reservación</a>
-                    <a href="" class="botonesPers1">Aperturar Reservación</a>
-                    <a href="" class="botonesPers1">Reservación</a>
-                    
-                </div>
-            </div>           
-        </sumary>
-    </details>    
 
-
-
-
-            <div class="main_section">
-                <div class="Contenedor_Principal">                                    
-                    <div class="Contenedor_Mesas">                          
-                        <h6 Id="Mesa1">Mesa 1</h6>
-                        <button type="button" onclick="VerEstadoMesa('1')"><img src="img/mesa01.png" alt="Mesa1" width="100"> </button>                        
-                    </div>
-                    <div class="Contenedor_Mesas">            
-                        <h6 Id="Mesa2">Mesa 2</h6>
-                        <button type="button" onclick="VerEstadoMesa('0')"><img src="img/mesaocupa01.png" alt="Mesa1" width="100"> </button>                        
-                    </div>
-                    <div class="Contenedor_Mesas">            
-                        <h6 Id="Mesa3">Mesa 3</h6>
-                        <button type="button" onclick=""><img src="img/mesa01.png" alt="Mesa1" width="100"> </button>
-                        
-                    </div>          
-                    <div class="Contenedor_Mesas">            
-                        <button type="button" onclick=""><img src="img/mesaocupa01.png" alt="Mesa1" width="100"> </button>
-                        Mesa 4
-                    </div>
-                    <div class="Contenedor_Mesas">            
-                        <button type="button" onclick=""><img src="img/mesa01.png" alt="Mesa1" width="100"> </button>
-                        Mesa 5
-                    </div>
-                    <div class="Contenedor_Mesas">            
-                        <button type="button" onclick=""><img src="img/mesa01.png" alt="Mesa1" width="100"> </button>
-                        Mesa 6
-                    </div>        
-                    <div class="Contenedor_Mesas">            
-                        <button type="button" onclick=""><img src="img/mesa01.png" alt="Mesa1" width="100"> </button>
-                        Mesa 13
-                    </div>
-
-                </div>
+    <!--Numero de Mesas-->
+    <!--***************-->
+    <div class="main_section">
+        <div class="Contenedor_Principal">                                    
+            <div class="Contenedor_Mesas">                          
+                <h6 Id="Mesa1">Mesa 1</h6>
+                <button type="button" onclick=""><img src="img/mesa01.png" alt="Mesa1" width="80"> </button>                        
             </div>
+            <div class="Contenedor_Mesas">            
+                <h6 Id="Mesa2">Mesa 2</h6>
+                <button type="button" onclick="VerEstadoMesa('0')"><img src="img/mesaocupa01.png" alt="Mesa1" width="100"> </button>                        
+            </div>
+            <div class="Contenedor_Mesas">            
+                <h6 Id="Mesa3">Mesa 3</h6>
+                <button type="button" onclick=""><img src="img/mesa01.png" alt="Mesa1" width="100"> </button>
+                
+            </div>          
+            <div class="Contenedor_Mesas">            
+                <button type="button" onclick=""><img src="img/mesaocupa01.png" alt="Mesa1" width="100"> </button>
+                Mesa 4
+            </div>
+            <div class="Contenedor_Mesas">            
+                <button type="button" onclick=""><img src="img/mesa01.png" alt="Mesa1" width="100"> </button>
+                Mesa 5
+            </div>
+            <div class="Contenedor_Mesas">            
+                <button type="button" onclick=""><img src="img/mesa01.png" alt="Mesa1" width="100"> </button>
+                Mesa 6
+            </div>        
+            <div class="Contenedor_Mesas">            
+                <button type="button" onclick=""><img src="img/mesa01.png" alt="Mesa1" width="100"> </button>
+                Mesa 13
+            </div>
+
+        </div>
+    </div>
 
     <div class="main_section">
         <div class="Contenedor_Principal">            
